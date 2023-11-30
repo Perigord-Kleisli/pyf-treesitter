@@ -135,3 +135,4 @@ bindings/
 build/
 src/
 !src/scanner.c
+!src/tree_sitter/parser.h
