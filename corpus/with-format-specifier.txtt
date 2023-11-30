@@ -1,0 +1,6 @@
+left: {name:<11} right: {name:>11} around: {name:|^13} inside: {-3:=6} arbitrary {1986:^{2 * 10}d}
+float_rounding: {pi:.2} float_rounding_arbitrary: {pi:~.{2 * 3}b}
+{pi:~>5.2}
+Octal (no prefix): {v:o}
+{10 ^ 9 - 1:,}
+{10 ^ 9 - 1:_b}

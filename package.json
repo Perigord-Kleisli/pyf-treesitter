@@ -1,0 +1,22 @@
+{
+  "name": "pyf-treesitter",
+  "version": "0.1.0",
+  "description": "tree-sitter grammars for the PyF Haskell library",
+  "main": "bindings/node",
+  "type": "commonjs",
+  "repository": "https://github.com/Perigord-Kleisli/pyf-treesitter",
+  "author": "Perigord-Kleisli",
+  "license": "MIT",
+  "scripts": {
+    "build": "tree-sitter generate && node-gyp build",
+    "test": "tree-sitter test",
+    "parse": "for i in corpus/*; do echo $i; tree-sitter parse $i; done"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "dependencies": {
+    "nan": "^2.18.0"
+  }
+}
